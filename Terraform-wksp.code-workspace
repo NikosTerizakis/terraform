@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "/home/nikos/Terraform/stage/services/webserver-cluster"
+		},
+		{
+			"path": "/home/nikos/Terraform/global"
+		},
+		{
+			"path": "global"
+		},
+		{
+			"path": "stage/services/webserver-cluster"
+		},
+		{
+			"path": "stage/data-stores/mysql"
+		}
+	],
+	"settings": {}
+}

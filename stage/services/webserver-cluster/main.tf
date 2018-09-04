@@ -21,7 +21,7 @@ data "terraform_remote_state" "db" {
 
   config {
     bucket = "nikost-terraform-up-and-running-state"
-    key = "stage/data-stores/mysql/terraform.tfstate"
+    key = "data-stores/mysql/terraform.tfstate"
     region = "eu-west-2"
   }
 }
@@ -34,7 +34,7 @@ data "template_file" "user_data" {
     db_address = "${data.terraform_remote_state.db.address}"
     db_port = "${data.terraform_remote_state.db.port}"
   }
-  
+
 }
 
 
